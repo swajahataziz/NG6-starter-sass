@@ -1,12 +1,16 @@
-import angular from 'angular';
-import Home from './home/home';
-import About from './about/about';
+import Main from '../pages/main/main';
+import Breadcrumb from './breadcrumb/breadcrumb';
+import Menu from './menu/menu';
+import Sidebar from './sidebar/sidebar'
 
-let componentModule = angular.module('app.components', [
-  Home,
-  About
-])
-  
-.name;
+const componentList = [
+        Main,
+        Breadcrumb,
+        Menu,
+        Sidebar
+      ],
+      Components = angular.
+        module('app.components', componentList)
+      .name;
 
-export default componentModule;
+export default Components;

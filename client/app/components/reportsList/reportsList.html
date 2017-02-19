@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="jumbotron">
+    <p>This page will list all of our reports, you can view the listings, or create your own report!</p>
+    <p><a class="btn btn-primary btn-lg" href="#/app/create" role="button">Create Report</a></p>
+  </div>
+
+
+  <report-list-item ng-repeat="report in vm.reports" report="report"></report-list-item>
+</div>

@@ -1,0 +1,12 @@
+<nav class="navbar navbar-primary">
+  <div class="container-fluid">
+    <a ui-sref="main.home" class="navbar-brand">
+      <img src="/assets/img/logo" alt="Indus Analytics" />
+    </a>
+    <ul class="navbar-links">
+      <li class="navbar-item" ng-repeat="item in $ctrl.items | orderBy: 'order'">
+        <a ui-sref="{{item.state}}" ui-sref-active="active">{{item.label}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -1,0 +1,6 @@
+<nav class="sidebar" ng-show="$ctrl.sidebarVisible">
+  <a ng-repeat="item in $ctrl.items | orderBy: 'order'" class="sidebar-link" ui-sref="{{item.state}}" ui-sref-active="active">
+    <span class="icon {{item.icon}}"></span>
+    <span class="sidebar-link-title">{{item.label}}</span>
+  </a>
+</nav>

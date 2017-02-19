@@ -1,0 +1,10 @@
+<div class="command-bar">
+  <div class="container-fluid">
+    <ol class="breadcrumb">
+      <li ng-repeat="item in $ctrl.items">
+        <a ui-sref="{{item.state}}($ctrl.$stateParams)" ng-if="!$last">{{item.label}}</a>
+        <span ng-if="$last">{{item.label}}</span>
+      </li>
+    </ol>
+  </div>
+</div>

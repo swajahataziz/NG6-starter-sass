@@ -1,0 +1,21 @@
+.sidebar {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  text-align: center;
+}
+
+.sidebar .sidebar-link {
+  font-size: 0.8rem;
+}
+
+.sidebar .sidebar-link:hover {
+  color: #3ed6cf;
+}
+
+.sidebar .sidebar-link:focus {
+  color: #CED2D4;
+}
+
+.sidebar .sidebar-link .icon {
+  font-size: 1.5rem;
+}
